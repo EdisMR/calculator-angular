@@ -1,0 +1,106 @@
+header{
+  padding: 20px;
+  background-color: var(--primary);
+  color: var(--primaryColor);
+  margin-bottom: 25px;
+  text-align: left;
+}
+h1{
+  margin: 0;
+}
+
+main{
+  min-height: 70vh;
+}
+
+.blockContainer {
+  display: flex;
+  width: 100%
+}
+
+.titleContainer {
+  height: 100px
+}
+
+.title,
+#calcContainer {
+  margin: auto
+}
+
+.container-width{
+  width: 100%;
+}
+
+#calcContainer {
+  display: inline-block;
+  width: 400px;
+  background-color: var(--primary);
+  color: var(--primaryColor);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputContainer,
+.buttonsContainer,
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.inputContainer input {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none
+}
+
+.buttonsContainer {
+  margin-top: 30px
+}
+
+.buttonsContainer button {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--secondary);
+  color: var(--secondaryColor);
+  transition-duration: var(--globalTransitionDuration);
+  &:hover{
+    background-color: var(--secondaryHover);
+  }
+  &:active{
+    background-color: var(--secondaryActive);
+  }
+}
+
+.resultContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 25px
+}
+
+footer{
+  padding: 20px;
+  background-color: var(--primary);
+  color: var(--primaryColor);
+  margin-top: 25px;
+  text-align: center;
+  a{
+    color: rgb(61, 232, 255) !important;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #calcContainer {
+    width: 80vw
+  }
+}
