@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   inputValue: string = '';
-  resultValue: string = '';
+  resultValue: string = '0';
 
   messages: {
     error: string;
@@ -261,7 +261,7 @@ export class AppComponent {
 
   resetResult(): void {
     this.inputValue = '';
-    this.resultValue = '';
+    this.resultValue = '0';
   }
 
   determinateLastParenthesis(analize: string): string {

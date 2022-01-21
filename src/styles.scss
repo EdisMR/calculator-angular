@@ -1,9 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --primary:rgb(160, 92, 107);
+  --primaryColor:#eee;
+
+  --secondary:rgb(199, 107, 127);
+  --secondaryColor:rgb(236, 236, 236);
+  --secondaryHover:rgb(211, 107, 130);
+  --secondaryActive:rgb(141, 67, 83);
+
+  --globalTransitionDuration:.2s;
+}
+
 html{
   background-color: #333;
-  color: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  color: #333;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+}
+
+body{
+  margin: 0;
 }

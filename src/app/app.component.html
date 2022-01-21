@@ -1,33 +1,42 @@
-<div class="block">
+<header>
   <h1>String Based Calculator</h1>
-</div>
+</header>
 
-<div id="calcContainer">
-  <section>
-    <article class="inputContainer">
+<main>
 
-      <input
-      type="text"
-      #inputTag
-      name="operationInput"
-      autocomplete="off"
-      autofocus=""
-      placeholder="Example: (26+(234*2))/(5-3)"
-      pattern="^[\d\+\-\*\/\(\)\.]{0,}$"
-      (input)="calculatorMainProcess(inputTag.value)">
+  <div id="calcContainer">
+    <section class="container-width">
+      <article class="inputContainer">
 
-    </article>
-    <article class="buttonsContainer">
-      <button aria-label="Reset Calculator" (click)="inputTag.value='';resetResult();">Restart</button>
-    </article>
-    <article class="resultContainer">
-      <div>
-        <span data-text="dresult">Result:</span><span id="resultInner">
-          {{resultValue}}
-        </span>
-      </div>
-    </article>
+        <input
+        type="text"
+        #inputTag
+        name="operationInput"
+        autocomplete="off"
+        autofocus=""
+        placeholder="Example: (26+(234*2))/(5-3)"
+        pattern="^[\d\+\-\*\/\(\)\.]{0,}$"
+        (input)="calculatorMainProcess(inputTag.value)"
+        >
+      </article>
+      <article class="buttonsContainer">
+        <button (click)="inputTag.value='';resetResult();">Restart</button>
+      </article>
+      <article class="resultContainer">
+        <div>
+          <span data-text="dresult">Result:</span><span id="resultInner">
+            {{resultValue}}
+          </span>
+        </div>
+      </article>
 
-  </section>
-  <div style="color: #555;" data-text="dnote">Note: You can solve Addition, subtraction, multiplication and division.</div>
-</div>
+    </section>
+
+    <div>Note: You can solve Addition, subtraction, multiplication and division.</div>
+  </div>
+
+</main>
+
+<footer>
+  Created by <a href="https://github.com/EdisMR">@Edis MR</a>
+</footer>
